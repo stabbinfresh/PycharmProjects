@@ -1,7 +1,12 @@
-def rearrange(nums):
-    result = []
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        half_length = n
 
-    for x, y in zip(nums[:len(nums) // 2], nums[len(nums) // 2:]):
-        result.extend([x, y])
+        result = []
 
-    return result
+        for i in range(half_length):
+            x = nums[i]
+            y = nums[i + half_length]
+            result.extend([x, y])
+
+        return (result)
