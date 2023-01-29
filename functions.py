@@ -1,11 +1,13 @@
-def get_todos(filepath="todos.txt"):
+FILEPATH = "todos.txt"
+
+def get_todos(filepath=FILEPATH):
     """Get the items in the file as a list """
     with open(filepath, 'r') as file:
         todos_local = file.readlines()
     return todos_local
 
 
-def write_todos(todos_arg, filepath="todos.txt"):
+def write_todos(todos_arg, filepath=FILEPATH):
     """Write the given list to a file """
     with open(filepath, 'w') as file:
         file.writelines(todos_arg)
