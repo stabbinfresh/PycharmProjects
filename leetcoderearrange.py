@@ -9,4 +9,4 @@ class Solution:
             y = nums[i + half_length]
             result.extend([x, y])
 
-        return (result)
+        return result
