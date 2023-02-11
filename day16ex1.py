@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 from converters import convert
 
-sg.theme("Black")
+sg.theme("DarkBlack")
 
 feet_label = sg.Text("Enter feet:")
 feet_input = sg.Input(key="feet")
@@ -13,7 +13,7 @@ convert_button = sg.Button("Convert")
 output_label = sg.Text("", key="output")
 exit_button = sg.Button("Exit")
 
-window = sg.Window("File Compressor",
+window = sg.Window("Convert Feet and Inches to Meters",
                    layout=[[feet_label, feet_input],
                            [inches_label, inches_input],
                            [convert_button, exit_button, output_label]])
